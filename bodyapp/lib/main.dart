@@ -2,7 +2,7 @@ import 'package:bodyapp/objetivos/objetivos.dart';
 import 'package:bodyapp/shared/colors.dart';
 import 'package:flutter/material.dart';
 import 'package:pixel_perfect/pixel_perfect.dart';
-
+import 'package:bodyapp/register/ui/screens/register_screen.dart';
 import 'dieta/dieta.dart';
 import 'login/login.dart';
 import 'medidas/medidas.dart';
@@ -37,7 +37,7 @@ class MyApp extends StatelessWidget {
         ),
       ),
       debugShowCheckedModeBanner: false,
-      home: MedidasScreen(),
+      home: RegisterScreen(),
     );
   }
 }

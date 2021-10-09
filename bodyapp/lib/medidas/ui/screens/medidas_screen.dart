@@ -1,5 +1,6 @@
 import 'package:dotted_line/dotted_line.dart';
 import 'package:flutter/material.dart';
+import 'package:bodyapp/register/ui/screens/register_screen.dart';
 
 class MedidasScreen extends StatelessWidget {
   const MedidasScreen({Key? key}) : super(key: key);
@@ -108,7 +109,12 @@ class MedidasScreen extends StatelessWidget {
         ),
       ),
       floatingActionButton: FloatingActionButton(
-        onPressed: () {},
+        onPressed: () {
+          Navigator.push(
+        context,
+        MaterialPageRoute(builder: (context) => RegisterScreen()),
+      );
+        },
         child: Icon(Icons.add),
       ),
     );
